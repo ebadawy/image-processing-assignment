@@ -1,0 +1,12 @@
+SA All,
+
+This folder contains 4 different files
+1- cips.h
+2- cips.cpp
+
+those two files are the library we're using to read an image file and write it back to another file , so you won't need to do this your own
+
+3- Image.h containing functions declarations
+4- Image.cpp containing functions implementation
+
+the Image Class is the class we're using and the one you should add your functions to and you should be submitting you
