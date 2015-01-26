@@ -21,6 +21,7 @@ public:
 	int getwidth(){return width;}
 	int getheight(){return height;}
 	ImageHeader(char *filename);
+	ImageHeader();
 	void CreateFileAndSaveHeader(char *filename);
 };
 
@@ -42,6 +43,10 @@ public:
 	 Image(char *filename);
 	 // a function that takes the header file info , width , height, pixels data and save it in the path specified by the filename string
 	 void SaveImage(char *filename);
+	 void thresh(int thersh_line);
+	 void increasebrightness();
+	 void average();
+	 Image(ImageHeader newimageheader , short** newimage);
 	 ~Image();
 
 	 // To be Declared and defined functions 
