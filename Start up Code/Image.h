@@ -48,7 +48,7 @@ public:
 	 //(to understand the following image functions refer to the videos in your google drive in the following path )
 	 // Google Drive\Software Engineering  (CSE321)\Assignments\Assignment 2 Image Class\Helping Videos
 	 // TODO: 1- Threshold function that takes an integer and threshold the image above and below that integer
-	 
+	 void thresh(int val);
 	 // TODO: 2- Average function that computes the average of an image with a box 5*5 and modify the image itselfs
 
 	 // TODO: 3- Median Filter that create and return an image that's the median of the original image convoluted by a 3*3 mask

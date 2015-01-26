@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include "Image.h"
 
 // Constructor that reads an image file from your disk
@@ -48,4 +49,10 @@ ImageHeader::ImageHeader(char *filename)
 void ImageHeader::CreateFileAndSaveHeader(char *filename)
 {
 	create_allocate_bmp_file(filename,&BitMapFileHeader,&BitMapHeader);
+}
+
+void Image::thresh(int val) {
+	for (int i = 0; i < height; i++)
+		for (int j = 0; j < width; j++) 
+			image[i][j] = image[i][j] < val ? 0 : 255;
 }
